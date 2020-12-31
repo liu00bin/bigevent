@@ -66,7 +66,8 @@ $(function () {
           return layer.msg(res.message)
         }
         layer.msg(res.message)
-        localStorage.setItem('Authorization', JSON.stringify(res.token))
+        localStorage.setItem('token', res.token)
+        window.location.href = 'index.html'
       },
       error: function (e) {
         //请求超时回调
