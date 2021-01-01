@@ -16,7 +16,7 @@ function getUserInfo() {
     url: '/my/userinfo', //默认当前页
     // dataType: 'json',
     success: function (res) {
-      console.log(res, 2)
+      // console.log(res, 2)
       res.data && renderAvater(res.data)
       //请求成功回调
     },

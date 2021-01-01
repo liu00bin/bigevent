@@ -28,7 +28,7 @@ $(function() {
         layui.layer.msg('更新密码成功！')
         // 重置表单
         $('.layui-form')[0].reset()
-        location.href='/login.html'
+        window.parent.location.href='/login.html'
       }
     })
   })
